@@ -283,15 +283,33 @@ footer {
   padding: 12px 12px;
   text-align: center;
   font-size: 1.8rem;
-  color: white;
+  color: #F6F7F8;
   border-radius: 10px;
+}
+.home .walk .walk-text .btn:hover {
+  animation-name: contrastColor;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes contrastColor {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #22283A;
+    background: #F6F7F8;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
+    background: #22283A;
     width: 95%;
-    margin: 0 auto;
     padding: 20px;
-    border-radius: 3px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #F6F7F8;
+    border-radius: 10px;
+    margin: 0 auto;
   }
 }
 .home .walk .walk-img {

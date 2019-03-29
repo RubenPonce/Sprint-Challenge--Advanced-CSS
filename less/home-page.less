@@ -1,5 +1,11 @@
 // Home Content
 @phone: ~"(max-width: 500px)";
+
+.imageWidthMargin(@width, @margin){
+  width: @width;
+  margin: @margin
+}
+
 .home {
 display: flex;
 
@@ -36,14 +42,14 @@ width: 100%;
       }
     }
     img {
-      width: 28%;
-      margin: 20px 2.5%;
+      
+      .imageWidthMargin(28%, 20px 2.5%);
       border-radius: 20px;
       height: 100%;
 
       @media @phone {
-        width: 90%;
-        margin: 20px auto;
+        
+        .imageWidthMargin(90%, 20px auto);
         
       }
     }
@@ -86,19 +92,26 @@ width: 100%;
       }
 
       .btn {
-        background: @btn-bg-color;
-        width: 30%;
-        padding: 12px 12px;
-        text-align: center;
-        font-size: 1.8rem;
-        color: white;
-        border-radius: 10px;
-        
+        .designButton();
+        &:hover{
+          animation-name: contrastColor;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+          @keyframes contrastColor{
+            0%{
+              color: white;
+            }
+            100%{
+              color: @btn-bg-color;
+              background: @porcelain;
+            }
+          }
+        }
         @media @phone {
-          width: 95%;
+          
+          .designButton(95%, 20px);
           margin: 0 auto;
-          padding: 20px;
-          border-radius: 3px;
+          
         }
 
       }
