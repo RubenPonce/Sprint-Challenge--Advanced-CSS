@@ -46,7 +46,7 @@ To be desktop first means that the desktop was designed and scaled down to fit m
 - Preprocessing is written in one language and then compiled to vanilla CSS. The language adds features that make vanilla CSS more organized and logical.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
--My favorite concept is nesting because it makes the CSS more organized and logical.
+- My favorite concept is nesting because it makes the CSS more organized and logical.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
